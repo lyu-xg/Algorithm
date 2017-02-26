@@ -9,7 +9,7 @@
 
 ####Recurrence: 
 
-```python
+```java
 def planWork(t,m,s):
 	if (t,m,s) in maxWages:
 		return maxWages[(t,m,s)]
