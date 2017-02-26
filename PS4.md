@@ -39,9 +39,9 @@ Although our recurrence only depends on max value, we need argmax values to reco
 
 ####Time complexity: 
 
-​Number of subproblem: T \* m \* S
+​Number of subproblem: T m S
 
-Time Complexity for each subproblem: O(m * S)
+Time Complexity for each subproblem: O(m S)
 
 Overall: O(T m<sup>2</sup> S<sup>2</sup>)
 
@@ -79,8 +79,17 @@ def cut(start,end,breakpoints):
 
 ​We two tables (`resultTable` and `argminTable`) to store min value and argmin value. 
 
-Although our recurrence only depends on min value, we need argmin values to reconstruct the original path using stored `b` entry in `argminTable` trivially. 
+Although our recurrence only depends on min value, we need argmin values to reconstruct the original path using stored `b` in `argminTable` trivially. 
 
+####Time Complexity
+
+Number of subproblems: n<sup>2</sup> L
+
+Time complexity for each subproblem: O(L)
+
+Overall time complexity: O(n<sup>2</sup> L<sup>2</sup>)
+
+##Problem 3
 
 
 
